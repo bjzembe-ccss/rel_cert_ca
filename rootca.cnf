@@ -1,0 +1,18 @@
+[ req ]
+distinguished_name = dname
+x509_extensions = cert_ext
+prompt = no
+
+[ dname ]
+commonName = Root CA; Related Certificate Test
+countryName = US
+stateOrProvinceName = MD
+localityName = Annapolis Junction
+organizationName = CCSS
+organizationalUnitName = C54
+
+[ cert_ext ]
+basicConstraints = CA:TRUE, pathlen:0
+keyUsage = keyCertSign, cRLSign
+subjectKeyIdentifier = hash
+
